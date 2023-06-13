@@ -1,0 +1,85 @@
+#root {
+  max-width: 1280px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-container {
+  border-radius: 10px;
+  border: 2px solid rgb(219, 151, 3);
+  padding: 1rem 2rem;
+}
+
+.main-container, .calculation {
+  background: rgba(219, 154, 43, 1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bar-selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+input, select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+  font-size: large;
+}
+
+p {
+  margin: 0;
+}
+
+.calculations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.calculation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: center;
+  max-width: 80%;
+  min-width: 30%;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.disc-value {
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 0.5rem
+  }
+  .calculation {
+    flex-direction: column;
+    width: 98%;
+  }
+
+  .calculations {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .disc-value {
+    margin: 0;
+  }
+  
+}
